@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px 10px;
+  border: 1px solid gainsboro;
+  background: #3f51b5;
+  color: white;
+  cursor: pointer;
+}
+
+#modalwrapper{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+.container{
+  width: 500px;
+  border: 0px solid red;
+  background: white;
+  margin: 50px auto;
+
+}
+
+.container > div {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container > .modalHeader, .container > .modalFooter{
+  height: 80px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.container > .modalBody{
+  height: 200px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.modalHeader{
+  position: relative;
+}
+.modalHeader > .closeBtn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
